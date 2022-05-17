@@ -1,0 +1,41 @@
+/* .box_int_edu {
+    border: 1px solid;
+    width: 500px;
+} */
+
+/* hr{
+    width: 200px
+
+} */
+
+img{
+    position: absolute;
+    left: 40%;
+    transform: translate(-50%);
+    width: 8%;
+    float: center;
+
+}
+body {
+    
+    background: #fffdf7;
+    font-family: Dotum,'돋움',Helvetica,sans-serif;
+}
+/* #content {
+    position: absolute;
+    left: 55%;
+    transform: translate(-50%);
+    width: 460px;
+}
+#content2 {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(50%);
+    width: 600px;
+} */
+
+*{
+    font-family: 'Black Han Sans', sans-serif;
+   
+}

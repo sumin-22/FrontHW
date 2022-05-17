@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript_01</title>
+    <!--
+        Javascript를 어디에 선언해야할까?
+        <head>와 </head> 사이
+
+        <head>
+            <script></script>
+        </head>
+        body 태그의 맨 마지막 바로 위에 script 코드를 작성해야 성능이 좋다고 한다
+        dom 구조가 올라오기다 전에 javascript가 호출될 수도 있기 때문에 오류가 발생한다. 
+        그렇기때문에 <body> <script></script> </ body> 로 사용해야 한다. -->
+
+        <!-- Javascript 실행 방법
+         1) script 태그안에 사용
+         2) webBrowser안에서도 javascript 사용이 가능
+            webBrower -> 개발자 환경 -> console에서 사용가능 ex)consolo.log("Hi");
+         3) node에서 실행 
+            - node
+            - console.log("Hi");
+
+            node app.js로 실행
+            - 실행할 javascript 파일이 있는 위치까지 이동해서 node로 실행 
+
+
+         4) javascript를 .js파일로 만들어서 로드할 수 있다. -->
+
+    <!-- <script>
+        document.write("Hello")
+    </script> -->
+</head>
+<body>
+    
+<script src="js/app.js"></script>
+</body>
+</html>

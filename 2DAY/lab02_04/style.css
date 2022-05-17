@@ -1,0 +1,32 @@
+/* 16. * 표시는 모든 태그에 적용되는 것을 세팅하는 것  */
+*{ 
+    color: rgb(199, 134, 223);
+}
+
+li{
+    color:rgb(212, 95, 191);
+}
+#bts{
+    color:rgb(166, 0, 255)
+}
+
+.door{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(229, 210, 227);
+}
+
+button:hover{
+    color: rgb(1, 0, 1);
+    background-color: rgb(215, 188, 219);
+}
+
+a[href="https://www.weverse.io/bts/feed"]{
+    color: rgb(92, 33, 109);
+}
+ a[href^="https://www.weverse.io/"]{
+    color: rgb(92, 0, 154);
+} 
+/* a[href$="https://www.weverse.io/"]{
+    color: rgb(227, 4, 75);
+} */

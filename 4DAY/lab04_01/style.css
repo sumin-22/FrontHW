@@ -1,0 +1,96 @@
+/* 1. 필요없다고 생각되는 속성들을 초기화 */
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/* 2.h태그와 p태그는 기본적으로 위아래 margin 가짐.
+   이것을 초기화 */
+h1, p {
+    margin: 0;
+}
+
+/* 5. a태그의 속성 정의 */
+a{
+    /* 링크 표시 없애기 */
+    text-decoration: none;
+    /* 부모 속성 상속받아 적용하기 */
+    color: inherit;
+}
+
+/* 3.배경 추가
+   배경의 반복을 없애기 위해 no-repeat 사용\
+   vw, vh와 %의 차이점?
+   vw,vh는 가로 세로가 현재 가지고 있는 크기의 최대치이고 
+   %는 마진을 다 빼고 100%가 되기 때문에 정확하게 전체를 다 사용할 경우에는 vw,vh를 사용 */
+#main{
+    background: url(20201228_173829.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    /* 구글폰트 Questrial 적용 */
+    font-family: 'Questrial', sans-serif;
+}
+
+/* 4.컨텐츠 텍스트의 색상을 흰색으로 */
+#contents{
+    color: white;
+    /* 절대 좌표 */
+    position: absolute;
+    width: 100%;
+    /* 시작 지점이 50%일 뿐 엘리먼트가 50%에 오는 것은 아니다 */
+    top: 50%;
+    /* 요소를 중앙에 오게 하기 위해서 */
+    transform: translateY(-50%);
+    text-align: center;
+    
+}
+
+#contents h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    margin-bottom: 16px;
+}
+
+#contents p{
+    /* 폰트 사이즈를 지정 */
+    font-size: 23px;
+    margin-bottom: 16px;
+}
+
+/* 태그를 버튼처럼 만들어주기 */
+#contents a{
+    display: inline-block;
+
+    /* 직사각형 테두리 만들기 */
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight:  bold;
+    /* 마우스를 올릴 때 0.5초동안 애니메이션 효과적용 */
+    transition: all 0.5s;
+}
+
+/* 마우스 올리면 색상이 변하게 만들기 */
+#contents a:hover{
+    background-color: rgb(120, 113, 150);
+}
+
+/* 미디어 쿼리 적용 */
+@media(max-width:770px) {
+    #contents h1{
+        font-size: 50px;
+    }
+
+    #contents p{
+        font-size: 20px;
+    }
+
+    #contents a{
+        font-size: 12px;
+    }
+
+}
