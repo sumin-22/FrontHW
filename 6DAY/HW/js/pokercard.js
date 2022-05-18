@@ -15,18 +15,27 @@
             cards.push(num + shape);
         }
     }
+    //랜덤으로 배열 값을 보여주기 위하여 shuffle 사용
+    function shuffle(array) { 
+        array.sort(() => Math.random() - 0.5); //배열의 요소 순서가 무작위로 변경되게 함
+    }
+
+    shuffle(cards);
+    console.log(cards);
     return cards;
+    
 }
+pockergroup();
 
-// const cards = pockergroup();
+document.addEventListener('DOMContentLoaded',()=>{
+    let doc = document.querySelector("#poker");
+    doc.innerHTML = pockergroup();
+});
 
-//랜덤으로 배열 값을 보여주기 위하여 shuffle 사용
-function shuffle(array) { 
-    array.sort(() => Math.random() - 0.5); //배열의 요소 순서가 무작위로 변경되게 함
-}
 
-shuffle(cards);
-console.log(cards);
+
+
+
 
 
 
