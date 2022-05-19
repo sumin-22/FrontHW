@@ -1,0 +1,80 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 50px;
+    height: 100%;
+ 
+}
+
+h1{
+    margin: 19px 0 20px;
+    font-size: 40px;
+    font-weight: 1000;
+    text-align:left;
+}
+
+.box{
+    display: block;
+    width: 54%;
+    height: 51px;
+    border: solid 1px #000000;
+    padding: 10px 14px 10px 14px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.int{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 25px;
+    border: none;
+    background: #fff;
+    font-size: 15px;
+}
+
+.btn_area {
+    margin: 30px 0 91px;
+}
+
+#btn{
+    width: 6%;
+    height: 51px;
+    padding: 15px 0 15px;
+    border: solid 1px #000;
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+
+#last_btn{
+    margin: 30px 0 91px;
+    width: 15%;
+    height: 51px;
+    padding: 15px 0 15px;
+    border: solid 1px #000;
+    cursor: pointer;
+    font-size: 15px;
+    color: red;
+}
+
+.to-dos{
+    margin-top: 25px;
+    margin-bottom: 350px;
+}
+li{
+    display: block;
+    width: 60%;
+    height: 51px;
+    border: solid 1px #000000;
+    padding: 10px 10px 10px 14px;
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 10px;
+    
+}
+
+
+
